@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #9fa1a7;
+    background-image: url(back_image.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.chat-container {
+    width: 300px;
+    background: rgb(210, 222, 174);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(171, 193, 106);
+    overflow: hidden;
+    border: 1px solid rgb(181, 200, 58);
+}
+
+.topDisplay {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    background-color: rgb(131, 138, 109);
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.chat-display {
+    background-image: url(sunset.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 0.83;
+    border: 2px solid rgb(220, 215, 215);
+    border-radius: 8px;
+    height: 400px;
+    background-color: #eaf2ee;
+    overflow-y: auto;
+    margin: 5px 13px 13px 13px;
+    padding: 10px;
+}
+
+.chat-message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chat-message.user {
+    background: #f6bb5c;
+    text-align: end;
+}
+
+.chat-message.bot {
+    background: #8d8e91;
+    text-align: start;
+}
+
+.chat-input-container {
+    display: flex;
+    padding: 15px;
+    background: #efefce;
+    margin: 0px 10px 9px 10px;
+    border-radius: 8px;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 1px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.chat-send-btn {
+    margin-left: 13px;
+    padding: 10px;
+    background: #98945a;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-display::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.chat-display {
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.language {
+    border-radius: 45px;
+    padding: 5px;
+    position: relative;
+    top: 3px;
+    left: 13px;
+    background-color: #c5a61b;
+}
+
+.language .lan_emo {
+    font-size: 1.5rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 40px; /* adjust this value to position the dropdown correctly */
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    font-size: 13px;
+    padding: 13px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #e4cb4b;
+}
+
+.show {
+    display: block;
+}

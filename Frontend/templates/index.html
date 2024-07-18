@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="topDisplay"><span style="font-size: 38px;">✨</span>Shimmy
+            <button type="button" class="language"><i class="fas fa-language lan_emo"></i></button>
+            <div id="languageDropdown" class="dropdown-content">
+                <a href="#" data-lang="en">English</a>
+                <a href="#" data-lang="bn">Bengali</a>
+                <a href="#" data-lang="hi">Hindi</a>
+                <a href="#" data-lang="de">German</a>
+                <a href="#" data-lang="fr">French</a>
+            </div>
+        </div>
+        <div id="chatDisplay" class="chat-display"></div>
+        <div class="chat-input-container">
+            <input type="text" id="chatInput" class="chat-input" placeholder="  Type in...">
+            <button id="sendBtn" class="chat-send-btn">Send</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
