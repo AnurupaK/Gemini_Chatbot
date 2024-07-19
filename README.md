@@ -23,8 +23,8 @@ This project implements a chatbot using the Gemini-1.5-flash model, integrated w
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/epapa-gemini-chatbot.git
-   cd epapa-gemini-chatbot
+   git clone https://github.com/yourusername/Gemini-chatbot.git
+   cd Gemini-chatbot
    ```
 
 2. Create a virtual environment and activate it:
