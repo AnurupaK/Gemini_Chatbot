@@ -69,7 +69,7 @@ def get_gemini_response(user_message,language):
         else:
             return translate_with_googletrans(response,language)
     except StopCandidateException as e:
-        return "Please refrain from asking questions that are not related to educational topics 😊"
+        return "Please refrain from asking questions that are inapropriate or irrelevant 😊"
 
 
 
